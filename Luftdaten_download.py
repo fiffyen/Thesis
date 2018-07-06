@@ -70,13 +70,4 @@ with open(output_dir + "check_availability_Luftdaten_"+str(stationsname) + ".csv
     writer.writerows(check_avail)
 
 
-# =======================================
-#   Rest Code
-# =======================================
 
-# url = "https://archive.luftdaten.info/2017-03-19/2017-03-19_sds011_sensor_353.csv"
-# request = requests.get('http://www.example.com')
-
-# filename = url.split('/')[-1].strip()
-# print(filename)
-# wget.download(url, '/home/vivi/test_download/'+str(filename))

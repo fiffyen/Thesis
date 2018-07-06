@@ -1,4 +1,4 @@
-from Utilities import P1, P2, HU, sensor1, sensor2
+from Utilities import P10, P25, HU, sensor1, sensor2
 import pandas as pd
 import statistic_tool as st
 import matplotlib.pyplot as plt
@@ -8,20 +8,6 @@ import pylab
 import copy
 
 Plot_path = '/home/vivi/Dokumente/Master/Master_Thesis/data/Plots/scatter/'
-
-
-# Equalising Datasets based on the HU-Data.
-mask_time = HU['x1']
-L_mask_time = (P1['time'] >= mask_time.iloc[0]) & (P1['time'] <= mask_time.iloc[-1])
-
-P_1 = copy.deepcopy(P1)
-P_1 = P_1.loc[L_mask_time]
-P_1 = P_1.reset_index(drop=True)
-
-P_2 = copy.deepcopy(P2)
-P_2 = P_2.loc[L_mask_time]
-P_2 = P_2.reset_index(drop=True)
-
 
 def scat_q(sens, p, h, n):
     for s in sens:
