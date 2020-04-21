@@ -1,9 +1,4 @@
 # Thesis
 Dieses Repository enthält sämtliche Dateien, die zur Erstellung meiner Masterarbeit notwendig sind.
 
-o Download 
-o Settings
-o Data Manipulation
-o Plotting
-
-o Handling netCDF Data
+Data Download, Data Manipulation Settings, Plotting, Handling netCDF Data
